@@ -1,0 +1,11 @@
+name = "fpl-planner"
+main = "worker.js"
+compatibility_date = "2026-08-15"
+
+# No secrets, no bindings. The FPL API is public and unauthenticated — this
+# worker exists purely to add CORS headers and an edge cache in front of it.
+# Do not add credentials here; if this ever needs one, use
+# `npx wrangler secret put <NAME>`.
+
+[observability]
+enabled = true

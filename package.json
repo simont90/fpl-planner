@@ -1,0 +1,15 @@
+{
+  "name": "fpl-planner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Fantasy Premier League squad optimiser and transfer planner. Static site, no build step.",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "calibrate": "node test/calibrate.mjs",
+    "fbref:match": "node fbref/match.mjs",
+    "serve": "python3 -m http.server 3000",
+    "worker": "npx wrangler dev --config worker/wrangler.toml",
+    "deploy": "npx wrangler deploy --config worker/wrangler.toml"
+  }
+}

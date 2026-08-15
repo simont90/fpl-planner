@@ -1,0 +1,605 @@
+{
+  "23": {
+    "source": "fbref-Big5",
+    "minutes": 2206,
+    "mp": 29,
+    "starts": 25,
+    "goals": 7,
+    "assists": 5,
+    "fbrefTeam": "Hamburger SV"
+  },
+  "49": {
+    "source": "fbref-Championship",
+    "minutes": 1289,
+    "mp": 24,
+    "starts": 14,
+    "goals": 1,
+    "assists": 0,
+    "fbrefTeam": "West Brom"
+  },
+  "81": {
+    "source": "fbref-Big5",
+    "minutes": 2201,
+    "mp": 34,
+    "starts": 24,
+    "goals": 7,
+    "assists": 5,
+    "fbrefTeam": "Elche"
+  },
+  "105": {
+    "source": "fbref-Big5",
+    "minutes": 2722,
+    "mp": 37,
+    "starts": 32,
+    "goals": 8,
+    "assists": 2,
+    "fbrefTeam": "Burnley"
+  },
+  "108": {
+    "source": "fbref-Big5",
+    "minutes": 1251,
+    "mp": 32,
+    "starts": 11,
+    "goals": 7,
+    "assists": 1,
+    "fbrefTeam": "West Ham"
+  },
+  "110": {
+    "source": "fbref-Championship",
+    "minutes": 4140,
+    "mp": 46,
+    "starts": 46,
+    "goals": 0,
+    "assists": 1,
+    "fbrefTeam": "Coventry City"
+  },
+  "166": {
+    "source": "fbref-Big5",
+    "minutes": 1007,
+    "mp": 23,
+    "starts": 12,
+    "goals": 8,
+    "assists": 1,
+    "fbrefTeam": "Bayern Munich"
+  },
+  "173": {
+    "source": "fbref-Championship",
+    "minutes": 2921,
+    "mp": 33,
+    "starts": 33,
+    "goals": 3,
+    "assists": 4,
+    "fbrefTeam": "Coventry City"
+  },
+  "174": {
+    "source": "fbref-Championship",
+    "minutes": 3338,
+    "mp": 38,
+    "starts": 37,
+    "goals": 2,
+    "assists": 0,
+    "fbrefTeam": "Coventry City"
+  },
+  "175": {
+    "source": "fbref-Championship",
+    "minutes": 3777,
+    "mp": 44,
+    "starts": 43,
+    "goals": 0,
+    "assists": 8,
+    "fbrefTeam": "Coventry City"
+  },
+  "176": {
+    "source": "fbref-Championship",
+    "minutes": 3544,
+    "mp": 42,
+    "starts": 41,
+    "goals": 0,
+    "assists": 3,
+    "fbrefTeam": "Coventry City"
+  },
+  "177": {
+    "source": "fbref-Championship",
+    "minutes": 595,
+    "mp": 22,
+    "starts": 5,
+    "goals": 2,
+    "assists": 1,
+    "fbrefTeam": "Coventry City"
+  },
+  "178": {
+    "source": "fbref-Championship",
+    "minutes": 431,
+    "mp": 11,
+    "starts": 3,
+    "goals": 0,
+    "assists": 1,
+    "fbrefTeam": "Coventry City"
+  },
+  "179": {
+    "source": "fbref-Championship",
+    "minutes": 1273,
+    "mp": 15,
+    "starts": 15,
+    "goals": 0,
+    "assists": 1,
+    "fbrefTeam": "Coventry City"
+  },
+  "180": {
+    "source": "fbref-Championship",
+    "minutes": 1077,
+    "mp": 17,
+    "starts": 11,
+    "goals": 0,
+    "assists": 0,
+    "fbrefTeam": "2 Teams"
+  },
+  "183": {
+    "source": "fbref-Championship",
+    "minutes": 2106,
+    "mp": 30,
+    "starts": 24,
+    "goals": 7,
+    "assists": 6,
+    "fbrefTeam": "Coventry City"
+  },
+  "184": {
+    "source": "fbref-Championship",
+    "minutes": 4123,
+    "mp": 46,
+    "starts": 46,
+    "goals": 2,
+    "assists": 2,
+    "fbrefTeam": "Coventry City"
+  },
+  "185": {
+    "source": "fbref-Championship",
+    "minutes": 2487,
+    "mp": 35,
+    "starts": 29,
+    "goals": 7,
+    "assists": 3,
+    "fbrefTeam": "Coventry City"
+  },
+  "186": {
+    "source": "fbref-Championship",
+    "minutes": 2976,
+    "mp": 42,
+    "starts": 36,
+    "goals": 10,
+    "assists": 6,
+    "fbrefTeam": "Coventry City"
+  },
+  "187": {
+    "source": "fbref-Championship",
+    "minutes": 1509,
+    "mp": 34,
+    "starts": 19,
+    "goals": 4,
+    "assists": 1,
+    "fbrefTeam": "Coventry City"
+  },
+  "188": {
+    "source": "fbref-Championship",
+    "minutes": 2318,
+    "mp": 39,
+    "starts": 25,
+    "goals": 10,
+    "assists": 7,
+    "fbrefTeam": "Coventry City"
+  },
+  "193": {
+    "source": "fbref-Championship",
+    "minutes": 2575,
+    "mp": 40,
+    "starts": 31,
+    "goals": 17,
+    "assists": 1,
+    "fbrefTeam": "Coventry City"
+  },
+  "194": {
+    "source": "fbref-Championship",
+    "minutes": 1862,
+    "mp": 32,
+    "starts": 21,
+    "goals": 13,
+    "assists": 4,
+    "fbrefTeam": "Coventry City"
+  },
+  "195": {
+    "source": "fbref-Championship",
+    "minutes": 1649,
+    "mp": 43,
+    "starts": 15,
+    "goals": 13,
+    "assists": 2,
+    "fbrefTeam": "Coventry City"
+  },
+  "247": {
+    "source": "fbref-Championship",
+    "minutes": 3305,
+    "mp": 38,
+    "starts": 38,
+    "goals": 5,
+    "assists": 7,
+    "fbrefTeam": "Middlesbrough"
+  },
+  "277": {
+    "source": "fbref-Championship",
+    "minutes": 3416,
+    "mp": 42,
+    "starts": 39,
+    "goals": 3,
+    "assists": 0,
+    "fbrefTeam": "Hull City"
+  },
+  "278": {
+    "source": "fbref-Championship",
+    "minutes": 3189,
+    "mp": 38,
+    "starts": 36,
+    "goals": 1,
+    "assists": 1,
+    "fbrefTeam": "Hull City"
+  },
+  "279": {
+    "source": "fbref-Championship",
+    "minutes": 1656,
+    "mp": 22,
+    "starts": 18,
+    "goals": 1,
+    "assists": 1,
+    "fbrefTeam": "Hull City"
+  },
+  "280": {
+    "source": "fbref-Championship",
+    "minutes": 3184,
+    "mp": 39,
+    "starts": 37,
+    "goals": 0,
+    "assists": 4,
+    "fbrefTeam": "Hull City"
+  },
+  "281": {
+    "source": "fbref-Championship",
+    "minutes": 1434,
+    "mp": 22,
+    "starts": 16,
+    "goals": 0,
+    "assists": 1,
+    "fbrefTeam": "Hull City"
+  },
+  "282": {
+    "source": "fbref-Championship",
+    "minutes": 2481,
+    "mp": 32,
+    "starts": 30,
+    "goals": 0,
+    "assists": 8,
+    "fbrefTeam": "Hull City"
+  },
+  "285": {
+    "source": "fbref-Championship",
+    "minutes": 707,
+    "mp": 12,
+    "starts": 6,
+    "goals": 0,
+    "assists": 1,
+    "fbrefTeam": "Hull City"
+  },
+  "287": {
+    "source": "fbref-Championship",
+    "minutes": 1836,
+    "mp": 33,
+    "starts": 22,
+    "goals": 3,
+    "assists": 5,
+    "fbrefTeam": "Hull City"
+  },
+  "289": {
+    "source": "fbref-Championship",
+    "minutes": 2502,
+    "mp": 31,
+    "starts": 28,
+    "goals": 4,
+    "assists": 4,
+    "fbrefTeam": "Hull City"
+  },
+  "290": {
+    "source": "fbref-Championship",
+    "minutes": 3150,
+    "mp": 42,
+    "starts": 35,
+    "goals": 2,
+    "assists": 2,
+    "fbrefTeam": "Hull City"
+  },
+  "297": {
+    "source": "fbref-Championship",
+    "minutes": 699,
+    "mp": 20,
+    "starts": 6,
+    "goals": 2,
+    "assists": 0,
+    "fbrefTeam": "Hull City"
+  },
+  "298": {
+    "source": "fbref-Championship",
+    "minutes": 443,
+    "mp": 18,
+    "starts": 4,
+    "goals": 2,
+    "assists": 0,
+    "fbrefTeam": "Hull City"
+  },
+  "300": {
+    "source": "fbref-Championship",
+    "minutes": 3307,
+    "mp": 37,
+    "starts": 36,
+    "goals": 0,
+    "assists": 0,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "301": {
+    "source": "fbref-Championship",
+    "minutes": 833,
+    "mp": 10,
+    "starts": 10,
+    "goals": 0,
+    "assists": 0,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "303": {
+    "source": "fbref-Championship",
+    "minutes": 2591,
+    "mp": 32,
+    "starts": 29,
+    "goals": 3,
+    "assists": 2,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "304": {
+    "source": "fbref-Championship",
+    "minutes": 4140,
+    "mp": 46,
+    "starts": 46,
+    "goals": 1,
+    "assists": 1,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "305": {
+    "source": "fbref-Championship",
+    "minutes": 3164,
+    "mp": 37,
+    "starts": 35,
+    "goals": 2,
+    "assists": 4,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "306": {
+    "source": "fbref-Championship",
+    "minutes": 2048,
+    "mp": 24,
+    "starts": 23,
+    "goals": 1,
+    "assists": 2,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "307": {
+    "source": "fbref-Championship",
+    "minutes": 847,
+    "mp": 17,
+    "starts": 9,
+    "goals": 1,
+    "assists": 1,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "308": {
+    "source": "fbref-Championship",
+    "minutes": 3790,
+    "mp": 43,
+    "starts": 43,
+    "goals": 1,
+    "assists": 3,
+    "fbrefTeam": "2 Teams"
+  },
+  "309": {
+    "source": "fbref-Championship",
+    "minutes": 2224,
+    "mp": 38,
+    "starts": 25,
+    "goals": 3,
+    "assists": 8,
+    "fbrefTeam": "2 Teams"
+  },
+  "310": {
+    "source": "fbref-Championship",
+    "minutes": 3847,
+    "mp": 45,
+    "starts": 45,
+    "goals": 1,
+    "assists": 3,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "311": {
+    "source": "fbref-Championship",
+    "minutes": 795,
+    "mp": 18,
+    "starts": 9,
+    "goals": 2,
+    "assists": 1,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "312": {
+    "source": "fbref-Championship",
+    "minutes": 2152,
+    "mp": 39,
+    "starts": 24,
+    "goals": 2,
+    "assists": 2,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "313": {
+    "source": "fbref-Championship",
+    "minutes": 2387,
+    "mp": 46,
+    "starts": 23,
+    "goals": 16,
+    "assists": 1,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "314": {
+    "source": "fbref-Championship",
+    "minutes": 865,
+    "mp": 15,
+    "starts": 10,
+    "goals": 1,
+    "assists": 1,
+    "fbrefTeam": "2 Teams"
+  },
+  "317": {
+    "source": "fbref-Championship",
+    "minutes": 2106,
+    "mp": 42,
+    "starts": 25,
+    "goals": 11,
+    "assists": 3,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "320": {
+    "source": "fbref-Championship",
+    "minutes": 900,
+    "mp": 29,
+    "starts": 7,
+    "goals": 2,
+    "assists": 0,
+    "fbrefTeam": "Ipswich Town"
+  },
+  "323": {
+    "source": "fbref-Championship",
+    "minutes": 1275,
+    "mp": 30,
+    "starts": 14,
+    "goals": 3,
+    "assists": 1,
+    "fbrefTeam": "2 Teams"
+  },
+  "324": {
+    "source": "fbref-Championship",
+    "minutes": 3367,
+    "mp": 46,
+    "starts": 39,
+    "goals": 10,
+    "assists": 7,
+    "fbrefTeam": "2 Teams"
+  },
+  "340": {
+    "source": "fbref-Championship",
+    "minutes": 2804,
+    "mp": 39,
+    "starts": 35,
+    "goals": 14,
+    "assists": 4,
+    "fbrefTeam": "Hull City"
+  },
+  "381": {
+    "source": "fbref-Championship",
+    "minutes": 1381,
+    "mp": 40,
+    "starts": 11,
+    "goals": 4,
+    "assists": 0,
+    "fbrefTeam": "2 Teams"
+  },
+  "410": {
+    "source": "fbref-Championship",
+    "minutes": 931,
+    "mp": 27,
+    "starts": 8,
+    "goals": 1,
+    "assists": 2,
+    "fbrefTeam": "Leicester City"
+  },
+  "424": {
+    "source": "fbref-Championship",
+    "minutes": 1881,
+    "mp": 22,
+    "starts": 21,
+    "goals": 1,
+    "assists": 1,
+    "fbrefTeam": "2 Teams"
+  },
+  "429": {
+    "source": "fbref-Big5",
+    "minutes": 1763,
+    "mp": 32,
+    "starts": 18,
+    "goals": 8,
+    "assists": 7,
+    "fbrefTeam": "Barcelona"
+  },
+  "436": {
+    "source": "fbref-Championship",
+    "minutes": 364,
+    "mp": 17,
+    "starts": 4,
+    "goals": 0,
+    "assists": 1,
+    "fbrefTeam": "2 Teams"
+  },
+  "479": {
+    "source": "fbref-Championship",
+    "minutes": 2029,
+    "mp": 25,
+    "starts": 22,
+    "goals": 1,
+    "assists": 0,
+    "fbrefTeam": "Sheffield United"
+  },
+  "507": {
+    "source": "fbref-Championship",
+    "minutes": 3343,
+    "mp": 40,
+    "starts": 36,
+    "goals": 0,
+    "assists": 1,
+    "fbrefTeam": "Stoke City"
+  },
+  "530": {
+    "source": "fbref-Championship",
+    "minutes": 1260,
+    "mp": 14,
+    "starts": 14,
+    "goals": 0,
+    "assists": 0,
+    "fbrefTeam": "Millwall"
+  },
+  "556": {
+    "source": "fbref-Championship",
+    "minutes": 3364,
+    "mp": 42,
+    "starts": 39,
+    "goals": 4,
+    "assists": 4,
+    "fbrefTeam": "Middlesbrough"
+  },
+  "580": {
+    "source": "fbref-Championship",
+    "minutes": 2071,
+    "mp": 31,
+    "starts": 21,
+    "goals": 3,
+    "assists": 2,
+    "fbrefTeam": "Southampton"
+  },
+  "584": {
+    "source": "fbref-Championship",
+    "minutes": 2500,
+    "mp": 37,
+    "starts": 27,
+    "goals": 5,
+    "assists": 12,
+    "fbrefTeam": "Sheffield United"
+  }
+}

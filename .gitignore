@@ -1,0 +1,12 @@
+node_modules/
+
+# Wrangler's local cache holds the Cloudflare account id it resolved. Nothing
+# secret, but it is machine state rather than source.
+.wrangler/
+
+# The full Stathead captures fbref/match.mjs reads — hundreds of players'
+# worth of table data, most never matched to an FPL player. Keeping that out
+# of the repo is the actual compliance posture: what gets committed is
+# data/fbref.json, the small derived per-player output, not a bulk copy of
+# FBref's own tables. Re-capture by hand (see fbref/match.mjs) to refresh.
+fbref/raw/

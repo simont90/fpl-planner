@@ -1,0 +1,210 @@
+/* FPL Planner — one stylesheet, no build step, light and dark. */
+
+:root {
+  --bg: #f6f7f9;
+  --panel: #ffffff;
+  --ink: #10151c;
+  --muted: #5c6773;
+  --line: #dfe4ea;
+  --accent: #00a398;
+  --accent-ink: #ffffff;
+  --good: #1a7f4b;
+  --bad: #b3261e;
+  --warn: #8a6100;
+  --pitch-a: #1f8a54;
+  --pitch-b: #1a7a4a;
+  --radius: 10px;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1116;
+    --panel: #161b22;
+    --ink: #e6edf3;
+    --muted: #8b949e;
+    --line: #2a313a;
+    --accent: #2dd4bf;
+    --accent-ink: #06231f;
+    --good: #56d364;
+    --bad: #f85149;
+    --warn: #d29922;
+    --pitch-a: #14532d;
+    --pitch-b: #12472899;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ------------------------------------------------------------ header */
+
+.top {
+  display: flex; flex-wrap: wrap; gap: 16px;
+  align-items: flex-end; justify-content: space-between;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+.brand h1 { margin: 0; font-size: 19px; letter-spacing: -0.01em; }
+.brand .sub { color: var(--muted); font-size: 13px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
+label { display: flex; flex-direction: column; gap: 3px; font-size: 12px; color: var(--muted); }
+label.chk { flex-direction: row; align-items: center; gap: 6px; }
+
+input, select, button {
+  font: inherit; color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px; padding: 7px 10px;
+}
+input[type=number] { width: 92px; }
+button { cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
+button:disabled { opacity: .55; cursor: progress; }
+
+/* ------------------------------------------------------------ banner */
+
+.banner {
+  margin: 0; padding: 10px 20px;
+  background: color-mix(in srgb, var(--warn) 14%, var(--panel));
+  border-bottom: 1px solid var(--line);
+  color: var(--ink); font-size: 13px;
+}
+.banner.error { background: color-mix(in srgb, var(--bad) 14%, var(--panel)); }
+
+/* -------------------------------------------------------------- tabs */
+
+.tabs { display: flex; gap: 2px; padding: 0 12px; border-bottom: 1px solid var(--line); background: var(--panel); overflow-x: auto; }
+.tabs button {
+  border: none; background: none; border-radius: 0;
+  border-bottom: 2px solid transparent;
+  color: var(--muted); padding: 10px 14px; white-space: nowrap;
+}
+.tabs button.active { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
+
+main { padding: 18px 20px 40px; max-width: 1180px; margin: 0 auto; }
+.tab { display: none; }
+.tab.active { display: block; }
+
+/* ------------------------------------------------------------- stats */
+
+.row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; align-items: flex-end; }
+.row.compact { gap: 10px; }
+.stat {
+  flex: 1 1 150px; background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 12px 14px;
+}
+.stat .k { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.stat b { display: block; font-size: 24px; font-variant-numeric: tabular-nums; line-height: 1.25; }
+.stat i { font-style: normal; font-size: 12px; color: var(--muted); }
+
+/* ------------------------------------------------------------- pitch */
+
+.pitch-wrap { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.pitch {
+  background: repeating-linear-gradient(180deg, var(--pitch-a) 0 44px, var(--pitch-b) 44px 88px);
+  padding: 16px 10px; display: flex; flex-direction: column; gap: 12px; min-height: 120px;
+}
+.line { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
+.bench { display: flex; gap: 8px; padding: 12px 10px; justify-content: center; flex-wrap: wrap; border-top: 1px solid var(--line); }
+
+.card {
+  width: 104px; background: var(--panel); border: 1px solid var(--line);
+  border-radius: 8px; padding: 6px; text-align: center; cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,.18);
+}
+.card:hover { border-color: var(--accent); }
+.card .nm { font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card .meta { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.card .ep { font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.tag {
+  display: inline-block; font-size: 9px; padding: 0 4px; border-radius: 4px;
+  background: var(--accent); color: var(--accent-ink); font-weight: 700; vertical-align: 1px;
+}
+.tag.prov { background: var(--warn); color: #fff; }
+.tag.fbref { background: var(--good); color: #fff; }
+.tag.watch { background: var(--bad); color: #fff; cursor: help; }
+.card.out { opacity: .55; }
+
+/* ------------------------------------------------------------ FDR ticker */
+
+/* One cell per upcoming fixture, colored on FPL's own easy-to-hard scale. */
+.fdr-1 { background: var(--good); }
+.fdr-2 { background: color-mix(in srgb, var(--good) 55%, var(--warn)); }
+.fdr-3 { background: var(--warn); }
+.fdr-4 { background: color-mix(in srgb, var(--warn) 45%, var(--bad)); }
+.fdr-5 { background: var(--bad); }
+.fdr-blank { background: var(--line); }
+
+.fdr-ticker { display: flex; gap: 2px; margin-top: 3px; }
+.fdr-cell {
+  flex: 1; height: 5px; border-radius: 2px; min-width: 6px;
+}
+.fdr-ticker.labeled .fdr-cell {
+  height: auto; flex: none; min-width: 26px; padding: 1px 3px; border-radius: 3px;
+  font-size: 9px; font-weight: 700; color: #fff; text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.fdr-badge {
+  display: inline-block; min-width: 16px; padding: 1px 5px; border-radius: 4px;
+  color: #fff; font-weight: 700; text-align: center; font-size: 12px;
+}
+
+/* ------------------------------------------------------------ tables */
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.scroll { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: 14px; }
+th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); position: sticky; top: 0; background: var(--panel); }
+tbody tr:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); cursor: pointer; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; font-family: var(--mono); }
+.pos { font-size: 10px; font-weight: 700; padding: 1px 5px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); }
+.good { color: var(--good); } .bad { color: var(--bad); }
+caption { text-align: left; padding: 10px 10px 6px; font-weight: 600; font-size: 13px; }
+
+h3 { margin: 18px 0 8px; font-size: 14px; }
+.note, .hint, .status { color: var(--muted); font-size: 12px; }
+.verdict {
+  background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+  border-radius: var(--radius); padding: 12px 14px; margin: 0 0 14px;
+}
+.advice { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 6px 16px; margin-bottom: 14px; }
+.advice li { margin: 8px 0; font-size: 13px; }
+
+.team-load { margin-top: 16px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; }
+.team-load summary { cursor: pointer; font-weight: 600; font-size: 13px; }
+.loadrow { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+.loadrow input { width: 220px; }
+code { font-family: var(--mono); font-size: 12px; }
+
+/* ------------------------------------------------------------- modal */
+
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,.5); display: grid; place-items: center; padding: 20px; z-index: 20; }
+.modal[hidden] { display: none; }
+.modal-card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+  padding: 20px; max-width: 620px; width: 100%; max-height: 84vh; overflow: auto; position: relative;
+}
+.close { position: absolute; top: 10px; right: 10px; border: none; background: none; font-size: 22px; line-height: 1; padding: 4px 8px; }
+
+.bars { margin: 10px 0; }
+.bar { display: grid; grid-template-columns: 96px 1fr 58px; gap: 8px; align-items: center; margin: 3px 0; font-size: 12px; }
+.bar .track { background: color-mix(in srgb, var(--ink) 8%, transparent); height: 12px; border-radius: 3px; overflow: hidden; }
+.bar .fill { height: 100%; background: var(--accent); }
+.bar .fill.neg { background: var(--bad); }
+.bar .v { text-align: right; font-family: var(--mono); }
+
+footer { padding: 18px 20px 30px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--line); }
+
+@media (max-width: 640px) {
+  .card { width: 88px; }
+  .stat b { font-size: 20px; }
+}

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FPL Planner</title>
+<link rel="stylesheet" href="css/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='14'>⚽</text></svg>">
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <h1>FPL Planner</h1>
+    <span class="sub" id="season-note">loading…</span>
+  </div>
+  <div class="controls">
+    <label>Horizon
+      <select id="horizon">
+        <option value="1">1 GW</option>
+        <option value="3">3 GWs</option>
+        <option value="5">5 GWs</option>
+        <option value="6" selected>6 GWs</option>
+        <option value="8">8 GWs</option>
+      </select>
+    </label>
+    <label>Budget
+      <input id="budget" type="number" min="60" max="120" step="0.1" value="100.0">
+    </label>
+    <button id="optimise" class="primary">Build optimal squad</button>
+  </div>
+</header>
+
+<div id="banner" class="banner" hidden></div>
+
+<nav class="tabs" role="tablist">
+  <button role="tab" data-tab="squad" class="active">Squad</button>
+  <button role="tab" data-tab="transfers">Transfers</button>
+  <button role="tab" data-tab="chips">Chips</button>
+  <button role="tab" data-tab="field">Vs field</button>
+  <button role="tab" data-tab="players">Players</button>
+</nav>
+
+<main>
+  <!-- ---------------------------------------------------------- squad -->
+  <section id="tab-squad" class="tab active">
+    <div class="row">
+      <div class="stat"><span class="k">Projected</span><b id="s-score">—</b><i>points over horizon</i></div>
+      <div class="stat"><span class="k">Cost</span><b id="s-cost">—</b><i id="s-bank">—</i></div>
+      <div class="stat"><span class="k">Next GW</span><b id="s-next">—</b><i id="s-formation">—</i></div>
+      <div class="stat"><span class="k">Search</span><b id="s-converged">—</b><i>restarts agreeing</i></div>
+    </div>
+
+    <div class="pitch-wrap">
+      <div class="pitch" id="pitch"></div>
+      <div class="bench" id="bench"></div>
+    </div>
+
+    <details class="team-load">
+      <summary>Load my real FPL team</summary>
+      <div class="loadrow">
+        <input id="entry-id" type="number" placeholder="FPL team id, e.g. 1234567" inputmode="numeric">
+        <button id="load-team">Load</button>
+        <p class="hint">Your team id is in the URL when you view your points on the FPL site:
+          <code>fantasy.premierleague.com/entry/<b>1234567</b>/event/1</code></p>
+      </div>
+      <p id="load-status" class="status"></p>
+    </details>
+
+    <div id="s-suggestions" hidden>
+      <h3>Squad suggestions</h3>
+      <p class="note">Rule-based reads of the projections and fixtures above — not a separate model,
+        and nothing here is fetched from anywhere. Every line traces back to a number already on screen.</p>
+      <ul id="s-suggestions-list" class="advice"></ul>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------ transfers -->
+  <section id="tab-transfers" class="tab">
+    <div class="row compact">
+      <label>Bank <input id="t-bank" type="number" step="0.1" value="0.0"></label>
+      <label>Free transfers
+        <select id="t-ft"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      </label>
+      <button id="t-run">Find best transfers</button>
+    </div>
+    <p id="t-verdict" class="verdict"></p>
+    <div id="t-options"></div>
+    <p class="note">Gains are measured over the whole horizon; a hit is charged once. The
+      <b>marginal</b> column is the one that answers whether the next transfer pays — it is
+      what that transfer adds after its own hit.</p>
+  </section>
+
+  <!-- ---------------------------------------------------------- chips -->
+  <section id="tab-chips" class="tab">
+    <button id="c-run">Score my chips</button>
+    <div id="c-advice"></div>
+    <div id="c-tables"></div>
+  </section>
+
+  <!-- ---------------------------------------------------------- field -->
+  <section id="tab-field" class="tab">
+    <button id="f-run">Compare against the field</button>
+    <div class="row" id="f-summary"></div>
+    <div id="f-tables"></div>
+    <p class="note">Ownership is measured from the API. Starting rates and captaincy shares are
+      <b>modelled</b> — FPL does not publish either — so effective ownership is an estimate.</p>
+  </section>
+
+  <!-- -------------------------------------------------------- players -->
+  <section id="tab-players" class="tab">
+    <div class="row compact">
+      <input id="p-search" type="search" placeholder="Search player or club…">
+      <select id="p-pos"><option value="">All positions</option><option>GKP</option><option>DEF</option><option>MID</option><option>FWD</option></select>
+      <select id="p-sort">
+        <option value="epTotal">Sort: points over horizon</option>
+        <option value="epNext">Sort: next gameweek</option>
+        <option value="value">Sort: points per million</option>
+        <option value="ownership">Sort: ownership</option>
+        <option value="cost">Sort: price</option>
+      </select>
+      <label class="chk"><input id="p-avail" type="checkbox" checked> Available only</label>
+    </div>
+    <div id="p-table"></div>
+  </section>
+</main>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-card">
+    <button class="close" id="modal-close" aria-label="Close">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<footer>
+  <span>Projections are model output, not predictions of fact. Every number here can be taken apart —
+  click any player for the full breakdown.</span>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

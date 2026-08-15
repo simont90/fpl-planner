@@ -1,0 +1,1865 @@
+{
+  "5": {
+    "minutes": 2454,
+    "shots": 25,
+    "shotsOnTarget": 7,
+    "shotsOnTargetPct": 28,
+    "goalsPerShot": 0.12,
+    "tacklesWon": 35,
+    "interceptions": 24
+  },
+  "8": {
+    "minutes": 1699,
+    "shots": 32,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 25,
+    "goalsPerShot": 0.03,
+    "tacklesWon": 19,
+    "interceptions": 13
+  },
+  "9": {
+    "minutes": 1792,
+    "shots": 3,
+    "shotsOnTarget": 2,
+    "shotsOnTargetPct": 66.7,
+    "goalsPerShot": 0.33,
+    "tacklesWon": 26,
+    "interceptions": 26
+  },
+  "12": {
+    "minutes": 2222,
+    "shots": 71,
+    "shotsOnTarget": 27,
+    "shotsOnTargetPct": 38,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 19,
+    "interceptions": 16
+  },
+  "13": {
+    "minutes": 3094,
+    "shots": 40,
+    "shotsOnTarget": 13,
+    "shotsOnTargetPct": 32.5,
+    "goalsPerShot": 0.1,
+    "tacklesWon": 33,
+    "interceptions": 33
+  },
+  "14": {
+    "minutes": 1895,
+    "shots": 63,
+    "shotsOnTarget": 20,
+    "shotsOnTargetPct": 31.7,
+    "goalsPerShot": 0.11,
+    "tacklesWon": 14,
+    "interceptions": 11
+  },
+  "15": {
+    "minutes": 1369,
+    "shots": 22,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 36.4,
+    "goalsPerShot": 0.05,
+    "tacklesWon": 9,
+    "interceptions": 7
+  },
+  "16": {
+    "minutes": 1211,
+    "shots": 25,
+    "shotsOnTarget": 9,
+    "shotsOnTargetPct": 36,
+    "goalsPerShot": 0.12,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "25": {
+    "minutes": 2224,
+    "shots": 55,
+    "shotsOnTarget": 22,
+    "shotsOnTargetPct": 40,
+    "goalsPerShot": 0.2,
+    "tacklesWon": 5,
+    "interceptions": 1
+  },
+  "26": {
+    "minutes": 581,
+    "shots": 18,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 22.2,
+    "goalsPerShot": 0.11,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "30": {
+    "minutes": 1852,
+    "shots": 14,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 35.7,
+    "goalsPerShot": 0,
+    "tacklesWon": 26,
+    "interceptions": 13
+  },
+  "32": {
+    "minutes": 3014,
+    "shots": 30,
+    "shotsOnTarget": 10,
+    "shotsOnTargetPct": 33.3,
+    "goalsPerShot": 0.1,
+    "tacklesWon": 32,
+    "interceptions": 24
+  },
+  "36": {
+    "minutes": 1605,
+    "shots": 20,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 25,
+    "goalsPerShot": 0,
+    "tacklesWon": 31,
+    "interceptions": 18
+  },
+  "40": {
+    "minutes": 3280,
+    "shots": 84,
+    "shotsOnTarget": 32,
+    "shotsOnTargetPct": 38.1,
+    "goalsPerShot": 0.12,
+    "tacklesWon": 23,
+    "interceptions": 13
+  },
+  "42": {
+    "minutes": 918,
+    "shots": 11,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 54.5,
+    "goalsPerShot": 0.09,
+    "tacklesWon": 11,
+    "interceptions": 5
+  },
+  "43": {
+    "minutes": 1862,
+    "shots": 24,
+    "shotsOnTarget": 7,
+    "shotsOnTargetPct": 29.2,
+    "goalsPerShot": 0,
+    "tacklesWon": 39,
+    "interceptions": 16
+  },
+  "45": {
+    "minutes": 2137,
+    "shots": 28,
+    "shotsOnTarget": 12,
+    "shotsOnTargetPct": 42.9,
+    "goalsPerShot": 0.18,
+    "tacklesWon": 17,
+    "interceptions": 12
+  },
+  "46": {
+    "minutes": 857,
+    "shots": 18,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 44.4,
+    "goalsPerShot": 0.17,
+    "tacklesWon": 11,
+    "interceptions": 2
+  },
+  "47": {
+    "minutes": 1411,
+    "shots": 7,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 57.1,
+    "goalsPerShot": 0.14,
+    "tacklesWon": 16,
+    "interceptions": 15
+  },
+  "48": {
+    "minutes": 1758,
+    "shots": 19,
+    "shotsOnTarget": 7,
+    "shotsOnTargetPct": 36.8,
+    "goalsPerShot": 0.11,
+    "tacklesWon": 30,
+    "interceptions": 19
+  },
+  "54": {
+    "minutes": 2829,
+    "shots": 19,
+    "shotsOnTarget": 7,
+    "shotsOnTargetPct": 36.8,
+    "goalsPerShot": 0.05,
+    "tacklesWon": 68,
+    "interceptions": 36
+  },
+  "55": {
+    "minutes": 2839,
+    "shots": 83,
+    "shotsOnTarget": 38,
+    "shotsOnTargetPct": 45.8,
+    "goalsPerShot": 0.19,
+    "tacklesWon": 14,
+    "interceptions": 5
+  },
+  "56": {
+    "minutes": 286,
+    "shots": 9,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 33.3,
+    "goalsPerShot": 0.22,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "61": {
+    "minutes": 3379,
+    "shots": 16,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 37.5,
+    "goalsPerShot": 0.06,
+    "tacklesWon": 51,
+    "interceptions": 43
+  },
+  "67": {
+    "minutes": 1111,
+    "shots": 28,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 28.6,
+    "goalsPerShot": 0.18,
+    "tacklesWon": 6,
+    "interceptions": 8
+  },
+  "68": {
+    "minutes": 2731,
+    "shots": 70,
+    "shotsOnTarget": 24,
+    "shotsOnTargetPct": 34.3,
+    "goalsPerShot": 0.07,
+    "tacklesWon": 21,
+    "interceptions": 16
+  },
+  "69": {
+    "minutes": 2849,
+    "shots": 44,
+    "shotsOnTarget": 13,
+    "shotsOnTargetPct": 29.5,
+    "goalsPerShot": 0.07,
+    "tacklesWon": 38,
+    "interceptions": 35
+  },
+  "70": {
+    "minutes": 952,
+    "shots": 17,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 23.5,
+    "goalsPerShot": 0.12,
+    "tacklesWon": 7,
+    "interceptions": 4
+  },
+  "73": {
+    "minutes": 1772,
+    "shots": 10,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 60,
+    "goalsPerShot": 0.2,
+    "tacklesWon": 24,
+    "interceptions": 30
+  },
+  "74": {
+    "minutes": 1204,
+    "shots": 48,
+    "shotsOnTarget": 13,
+    "shotsOnTargetPct": 27.1,
+    "goalsPerShot": 0.02,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "75": {
+    "minutes": 994,
+    "shots": 25,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 32,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 20,
+    "interceptions": 11
+  },
+  "77": {
+    "minutes": 1094,
+    "shots": 20,
+    "shotsOnTarget": 9,
+    "shotsOnTargetPct": 45,
+    "goalsPerShot": 0.15,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "79": {
+    "minutes": 2742,
+    "shots": 72,
+    "shotsOnTarget": 23,
+    "shotsOnTargetPct": 31.9,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 5,
+    "interceptions": 6
+  },
+  "80": {
+    "minutes": 232,
+    "shots": 15,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 20,
+    "goalsPerShot": 0.07,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "84": {
+    "minutes": 2975,
+    "shots": 20,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 30,
+    "goalsPerShot": 0.05,
+    "tacklesWon": 13,
+    "interceptions": 36
+  },
+  "85": {
+    "minutes": 2763,
+    "shots": 23,
+    "shotsOnTarget": 7,
+    "shotsOnTargetPct": 30.4,
+    "goalsPerShot": 0,
+    "tacklesWon": 9,
+    "interceptions": 26
+  },
+  "86": {
+    "minutes": 1972,
+    "shots": 31,
+    "shotsOnTarget": 9,
+    "shotsOnTargetPct": 29,
+    "goalsPerShot": 0.1,
+    "tacklesWon": 14,
+    "interceptions": 10
+  },
+  "87": {
+    "minutes": 1810,
+    "shots": 10,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 30,
+    "goalsPerShot": 0,
+    "tacklesWon": 23,
+    "interceptions": 15
+  },
+  "88": {
+    "minutes": 3258,
+    "shots": 9,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 33.3,
+    "goalsPerShot": 0.11,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "94": {
+    "minutes": 2745,
+    "shots": 57,
+    "shotsOnTarget": 24,
+    "shotsOnTargetPct": 42.1,
+    "goalsPerShot": 0.14,
+    "tacklesWon": 27,
+    "interceptions": 19
+  },
+  "95": {
+    "minutes": 2276,
+    "shots": 56,
+    "shotsOnTarget": 20,
+    "shotsOnTargetPct": 35.7,
+    "goalsPerShot": 0.13,
+    "tacklesWon": 14,
+    "interceptions": 24
+  },
+  "96": {
+    "minutes": 2054,
+    "shots": 29,
+    "shotsOnTarget": 11,
+    "shotsOnTargetPct": 37.9,
+    "goalsPerShot": 0.14,
+    "tacklesWon": 34,
+    "interceptions": 24
+  },
+  "97": {
+    "minutes": 2247,
+    "shots": 29,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 27.6,
+    "goalsPerShot": 0.1,
+    "tacklesWon": 23,
+    "interceptions": 21
+  },
+  "98": {
+    "minutes": 1443,
+    "shots": 12,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 25,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 17,
+    "interceptions": 27
+  },
+  "102": {
+    "minutes": 2659,
+    "shots": 16,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 25,
+    "goalsPerShot": 0.06,
+    "tacklesWon": 46,
+    "interceptions": 28
+  },
+  "105": {
+    "minutes": 2722,
+    "shots": 55,
+    "shotsOnTarget": 23,
+    "shotsOnTargetPct": 41.8,
+    "goalsPerShot": 0.15,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "108": {
+    "minutes": 1251,
+    "shots": 38,
+    "shotsOnTarget": 16,
+    "shotsOnTargetPct": 42.1,
+    "goalsPerShot": 0.18,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "112": {
+    "minutes": 3210,
+    "shots": 23,
+    "shotsOnTarget": 10,
+    "shotsOnTargetPct": 43.5,
+    "goalsPerShot": 0.13,
+    "tacklesWon": 31,
+    "interceptions": 45
+  },
+  "115": {
+    "minutes": 1414,
+    "shots": 13,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 46.2,
+    "goalsPerShot": 0.15,
+    "tacklesWon": 10,
+    "interceptions": 11
+  },
+  "116": {
+    "minutes": 2838,
+    "shots": 23,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 13,
+    "goalsPerShot": 0.04,
+    "tacklesWon": 22,
+    "interceptions": 30
+  },
+  "122": {
+    "minutes": 2391,
+    "shots": 41,
+    "shotsOnTarget": 11,
+    "shotsOnTargetPct": 26.8,
+    "goalsPerShot": 0.07,
+    "tacklesWon": 37,
+    "interceptions": 15
+  },
+  "123": {
+    "minutes": 1741,
+    "shots": 37,
+    "shotsOnTarget": 15,
+    "shotsOnTargetPct": 40.5,
+    "goalsPerShot": 0.11,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "124": {
+    "minutes": 1636,
+    "shots": 18,
+    "shotsOnTarget": 9,
+    "shotsOnTargetPct": 50,
+    "goalsPerShot": 0.06,
+    "tacklesWon": 17,
+    "interceptions": 11
+  },
+  "125": {
+    "minutes": 1786,
+    "shots": 42,
+    "shotsOnTarget": 14,
+    "shotsOnTargetPct": 33.3,
+    "goalsPerShot": 0.07,
+    "tacklesWon": 19,
+    "interceptions": 11
+  },
+  "129": {
+    "minutes": 1929,
+    "shots": 41,
+    "shotsOnTarget": 10,
+    "shotsOnTargetPct": 24.4,
+    "goalsPerShot": 0.07,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "130": {
+    "minutes": 1903,
+    "shots": 18,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 33.3,
+    "goalsPerShot": 0.11,
+    "tacklesWon": 43,
+    "interceptions": 24
+  },
+  "136": {
+    "minutes": 2258,
+    "shots": 56,
+    "shotsOnTarget": 28,
+    "shotsOnTargetPct": 50,
+    "goalsPerShot": 0.21,
+    "tacklesWon": 14,
+    "interceptions": 8
+  },
+  "138": {
+    "minutes": 369,
+    "shots": 21,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 38.1,
+    "goalsPerShot": 0.1,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "142": {
+    "minutes": 1963,
+    "shots": 22,
+    "shotsOnTarget": 7,
+    "shotsOnTargetPct": 31.8,
+    "goalsPerShot": 0.09,
+    "tacklesWon": 33,
+    "interceptions": 32
+  },
+  "143": {
+    "minutes": 2783,
+    "shots": 16,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 31.3,
+    "goalsPerShot": 0.19,
+    "tacklesWon": 22,
+    "interceptions": 37
+  },
+  "144": {
+    "minutes": 2261,
+    "shots": 12,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 50,
+    "goalsPerShot": 0.17,
+    "tacklesWon": 23,
+    "interceptions": 30
+  },
+  "153": {
+    "minutes": 1254,
+    "shots": 5,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 60,
+    "goalsPerShot": 0,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "154": {
+    "minutes": 1955,
+    "shots": 64,
+    "shotsOnTarget": 25,
+    "shotsOnTargetPct": 39.1,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 12,
+    "interceptions": 13
+  },
+  "155": {
+    "minutes": 3115,
+    "shots": 72,
+    "shotsOnTarget": 31,
+    "shotsOnTargetPct": 43.1,
+    "goalsPerShot": 0.11,
+    "tacklesWon": 24,
+    "interceptions": 20
+  },
+  "165": {
+    "minutes": 2661,
+    "shots": 73,
+    "shotsOnTarget": 28,
+    "shotsOnTargetPct": 38.4,
+    "goalsPerShot": 0.21,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "167": {
+    "minutes": 1107,
+    "shots": 36,
+    "shotsOnTarget": 11,
+    "shotsOnTargetPct": 30.6,
+    "goalsPerShot": 0.03,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "190": {
+    "minutes": 1272,
+    "shots": 23,
+    "shotsOnTarget": 9,
+    "shotsOnTargetPct": 39.1,
+    "goalsPerShot": 0.09,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "200": {
+    "minutes": 3085,
+    "shots": 25,
+    "shotsOnTarget": 7,
+    "shotsOnTargetPct": 28,
+    "goalsPerShot": 0.04,
+    "tacklesWon": 38,
+    "interceptions": 45
+  },
+  "202": {
+    "minutes": 2827,
+    "shots": 15,
+    "shotsOnTarget": 2,
+    "shotsOnTargetPct": 13.3,
+    "goalsPerShot": 0.07,
+    "tacklesWon": 35,
+    "interceptions": 43
+  },
+  "204": {
+    "minutes": 3251,
+    "shots": 19,
+    "shotsOnTarget": 7,
+    "shotsOnTargetPct": 36.8,
+    "goalsPerShot": 0.05,
+    "tacklesWon": 65,
+    "interceptions": 33
+  },
+  "208": {
+    "minutes": 2174,
+    "shots": 48,
+    "shotsOnTarget": 21,
+    "shotsOnTargetPct": 43.8,
+    "goalsPerShot": 0.13,
+    "tacklesWon": 9,
+    "interceptions": 7
+  },
+  "209": {
+    "minutes": 1722,
+    "shots": 23,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 21.7,
+    "goalsPerShot": 0.09,
+    "tacklesWon": 16,
+    "interceptions": 4
+  },
+  "210": {
+    "minutes": 2552,
+    "shots": 32,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 18.8,
+    "goalsPerShot": 0.03,
+    "tacklesWon": 36,
+    "interceptions": 27
+  },
+  "214": {
+    "minutes": 1902,
+    "shots": 19,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 21.1,
+    "goalsPerShot": 0,
+    "tacklesWon": 35,
+    "interceptions": 14
+  },
+  "215": {
+    "minutes": 796,
+    "shots": 13,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 30.8,
+    "goalsPerShot": 0,
+    "tacklesWon": 11,
+    "interceptions": 1
+  },
+  "222": {
+    "minutes": 2307,
+    "shots": 44,
+    "shotsOnTarget": 14,
+    "shotsOnTargetPct": 31.8,
+    "goalsPerShot": 0.07,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "223": {
+    "minutes": 2218,
+    "shots": 63,
+    "shotsOnTarget": 32,
+    "shotsOnTargetPct": 50.8,
+    "goalsPerShot": 0.13,
+    "tacklesWon": 4,
+    "interceptions": 6
+  },
+  "224": {
+    "minutes": 424,
+    "shots": 15,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 40,
+    "goalsPerShot": 0.13,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "229": {
+    "minutes": 3330,
+    "shots": 20,
+    "shotsOnTarget": 10,
+    "shotsOnTargetPct": 50,
+    "goalsPerShot": 0.1,
+    "tacklesWon": 30,
+    "interceptions": 29
+  },
+  "231": {
+    "minutes": 2591,
+    "shots": 27,
+    "shotsOnTarget": 7,
+    "shotsOnTargetPct": 25.9,
+    "goalsPerShot": 0.11,
+    "tacklesWon": 24,
+    "interceptions": 37
+  },
+  "232": {
+    "minutes": 3120,
+    "shots": 13,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 46.2,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 32,
+    "interceptions": 13
+  },
+  "236": {
+    "minutes": 2626,
+    "shots": 39,
+    "shotsOnTarget": 15,
+    "shotsOnTargetPct": 38.5,
+    "goalsPerShot": 0.21,
+    "tacklesWon": 26,
+    "interceptions": 14
+  },
+  "237": {
+    "minutes": 2778,
+    "shots": 43,
+    "shotsOnTarget": 22,
+    "shotsOnTargetPct": 51.2,
+    "goalsPerShot": 0.09,
+    "tacklesWon": 40,
+    "interceptions": 17
+  },
+  "238": {
+    "minutes": 1627,
+    "shots": 26,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 30.8,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 15,
+    "interceptions": 11
+  },
+  "239": {
+    "minutes": 3413,
+    "shots": 45,
+    "shotsOnTarget": 14,
+    "shotsOnTargetPct": 31.1,
+    "goalsPerShot": 0.04,
+    "tacklesWon": 72,
+    "interceptions": 57
+  },
+  "241": {
+    "minutes": 1168,
+    "shots": 24,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 20.8,
+    "goalsPerShot": 0,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "242": {
+    "minutes": 363,
+    "shots": 10,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 50,
+    "goalsPerShot": 0,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "248": {
+    "minutes": 1568,
+    "shots": 43,
+    "shotsOnTarget": 17,
+    "shotsOnTargetPct": 39.5,
+    "goalsPerShot": 0.21,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "249": {
+    "minutes": 1914,
+    "shots": 38,
+    "shotsOnTarget": 14,
+    "shotsOnTargetPct": 36.8,
+    "goalsPerShot": 0.21,
+    "tacklesWon": 4,
+    "interceptions": 5
+  },
+  "253": {
+    "minutes": 2875,
+    "shots": 16,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 25,
+    "goalsPerShot": 0,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "256": {
+    "minutes": 1791,
+    "shots": 16,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 18.8,
+    "goalsPerShot": 0.06,
+    "tacklesWon": 38,
+    "interceptions": 26
+  },
+  "258": {
+    "minutes": 1845,
+    "shots": 14,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 42.9,
+    "goalsPerShot": 0,
+    "tacklesWon": 24,
+    "interceptions": 28
+  },
+  "260": {
+    "minutes": 2673,
+    "shots": 78,
+    "shotsOnTarget": 25,
+    "shotsOnTargetPct": 32.1,
+    "goalsPerShot": 0.13,
+    "tacklesWon": 19,
+    "interceptions": 16
+  },
+  "261": {
+    "minutes": 2419,
+    "shots": 39,
+    "shotsOnTarget": 15,
+    "shotsOnTargetPct": 38.5,
+    "goalsPerShot": 0.1,
+    "tacklesWon": 18,
+    "interceptions": 15
+  },
+  "262": {
+    "minutes": 1923,
+    "shots": 36,
+    "shotsOnTarget": 11,
+    "shotsOnTargetPct": 30.6,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 22,
+    "interceptions": 22
+  },
+  "263": {
+    "minutes": 1041,
+    "shots": 25,
+    "shotsOnTarget": 10,
+    "shotsOnTargetPct": 40,
+    "goalsPerShot": 0.04,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "264": {
+    "minutes": 1039,
+    "shots": 12,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 25,
+    "goalsPerShot": 0,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "265": {
+    "minutes": 2905,
+    "shots": 14,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 21.4,
+    "goalsPerShot": 0,
+    "tacklesWon": 41,
+    "interceptions": 26
+  },
+  "267": {
+    "minutes": 1734,
+    "shots": 18,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 33.3,
+    "goalsPerShot": 0.06,
+    "tacklesWon": 28,
+    "interceptions": 16
+  },
+  "269": {
+    "minutes": 1823,
+    "shots": 16,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 25,
+    "goalsPerShot": 0.19,
+    "tacklesWon": 29,
+    "interceptions": 23
+  },
+  "327": {
+    "minutes": 1890,
+    "shots": 15,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 40,
+    "goalsPerShot": 0.07,
+    "tacklesWon": 13,
+    "interceptions": 22
+  },
+  "328": {
+    "minutes": 2936,
+    "shots": 31,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 16.1,
+    "goalsPerShot": 0,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "329": {
+    "minutes": 2951,
+    "shots": 18,
+    "shotsOnTarget": 7,
+    "shotsOnTargetPct": 38.9,
+    "goalsPerShot": 0.11,
+    "tacklesWon": 19,
+    "interceptions": 30
+  },
+  "330": {
+    "minutes": 2793,
+    "shots": 18,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 22.2,
+    "goalsPerShot": 0.06,
+    "tacklesWon": 43,
+    "interceptions": 30
+  },
+  "331": {
+    "minutes": 2631,
+    "shots": 18,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 16.7,
+    "goalsPerShot": 0,
+    "tacklesWon": 47,
+    "interceptions": 28
+  },
+  "332": {
+    "minutes": 1901,
+    "shots": 24,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 25,
+    "goalsPerShot": 0.08,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "335": {
+    "minutes": 2370,
+    "shots": 55,
+    "shotsOnTarget": 14,
+    "shotsOnTargetPct": 25.5,
+    "goalsPerShot": 0.09,
+    "tacklesWon": 35,
+    "interceptions": 19
+  },
+  "336": {
+    "minutes": 1561,
+    "shots": 35,
+    "shotsOnTarget": 15,
+    "shotsOnTargetPct": 42.9,
+    "goalsPerShot": 0.23,
+    "tacklesWon": 15,
+    "interceptions": 12
+  },
+  "337": {
+    "minutes": 2449,
+    "shots": 47,
+    "shotsOnTarget": 17,
+    "shotsOnTargetPct": 36.2,
+    "goalsPerShot": 0.09,
+    "tacklesWon": 27,
+    "interceptions": 17
+  },
+  "338": {
+    "minutes": 3119,
+    "shots": 26,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 23.1,
+    "goalsPerShot": 0.04,
+    "tacklesWon": 46,
+    "interceptions": 50
+  },
+  "339": {
+    "minutes": 1011,
+    "shots": 16,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 25,
+    "goalsPerShot": 0.13,
+    "tacklesWon": 24,
+    "interceptions": 12
+  },
+  "343": {
+    "minutes": 559,
+    "shots": 14,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 21.4,
+    "goalsPerShot": 0,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "346": {
+    "minutes": 2721,
+    "shots": 73,
+    "shotsOnTarget": 34,
+    "shotsOnTargetPct": 46.6,
+    "goalsPerShot": 0.14,
+    "tacklesWon": 4,
+    "interceptions": 5
+  },
+  "347": {
+    "minutes": 1083,
+    "shots": 30,
+    "shotsOnTarget": 16,
+    "shotsOnTargetPct": 53.3,
+    "goalsPerShot": 0.13,
+    "tacklesWon": 7,
+    "interceptions": 3
+  },
+  "348": {
+    "minutes": 258,
+    "shots": 14,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 21.4,
+    "goalsPerShot": 0,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "356": {
+    "minutes": 3420,
+    "shots": 30,
+    "shotsOnTarget": 14,
+    "shotsOnTargetPct": 46.7,
+    "goalsPerShot": 0.2,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "358": {
+    "minutes": 2257,
+    "shots": 9,
+    "shotsOnTarget": 2,
+    "shotsOnTargetPct": 22.2,
+    "goalsPerShot": 0.22,
+    "tacklesWon": 26,
+    "interceptions": 15
+  },
+  "366": {
+    "minutes": 2378,
+    "shots": 51,
+    "shotsOnTarget": 18,
+    "shotsOnTargetPct": 35.3,
+    "goalsPerShot": 0.1,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "367": {
+    "minutes": 2737,
+    "shots": 87,
+    "shotsOnTarget": 21,
+    "shotsOnTargetPct": 24.1,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 15,
+    "interceptions": 12
+  },
+  "368": {
+    "minutes": 3231,
+    "shots": 71,
+    "shotsOnTarget": 23,
+    "shotsOnTargetPct": 32.4,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 32,
+    "interceptions": 29
+  },
+  "369": {
+    "minutes": 560,
+    "shots": 16,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 37.5,
+    "goalsPerShot": 0.13,
+    "tacklesWon": 2,
+    "interceptions": 3
+  },
+  "370": {
+    "minutes": 339,
+    "shots": 17,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 29.4,
+    "goalsPerShot": 0.12,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "371": {
+    "minutes": 2992,
+    "shots": 38,
+    "shotsOnTarget": 13,
+    "shotsOnTargetPct": 34.2,
+    "goalsPerShot": 0.13,
+    "tacklesWon": 35,
+    "interceptions": 44
+  },
+  "372": {
+    "minutes": 2658,
+    "shots": 52,
+    "shotsOnTarget": 12,
+    "shotsOnTargetPct": 23.1,
+    "goalsPerShot": 0.04,
+    "tacklesWon": 27,
+    "interceptions": 18
+  },
+  "373": {
+    "minutes": 1937,
+    "shots": 22,
+    "shotsOnTarget": 7,
+    "shotsOnTargetPct": 31.8,
+    "goalsPerShot": 0.05,
+    "tacklesWon": 23,
+    "interceptions": 18
+  },
+  "379": {
+    "minutes": 699,
+    "shots": 17,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 35.3,
+    "goalsPerShot": 0.18,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "380": {
+    "minutes": 1803,
+    "shots": 65,
+    "shotsOnTarget": 19,
+    "shotsOnTargetPct": 29.2,
+    "goalsPerShot": 0.17,
+    "tacklesWon": 7,
+    "interceptions": 4
+  },
+  "387": {
+    "minutes": 2646,
+    "shots": 41,
+    "shotsOnTarget": 15,
+    "shotsOnTargetPct": 36.6,
+    "goalsPerShot": 0.12,
+    "tacklesWon": 36,
+    "interceptions": 20
+  },
+  "388": {
+    "minutes": 3150,
+    "shots": 32,
+    "shotsOnTarget": 9,
+    "shotsOnTargetPct": 28.1,
+    "goalsPerShot": 0.09,
+    "tacklesWon": 31,
+    "interceptions": 49
+  },
+  "391": {
+    "minutes": 1372,
+    "shots": 17,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 35.3,
+    "goalsPerShot": 0.12,
+    "tacklesWon": 13,
+    "interceptions": 16
+  },
+  "397": {
+    "minutes": 3195,
+    "shots": 83,
+    "shotsOnTarget": 41,
+    "shotsOnTargetPct": 49.4,
+    "goalsPerShot": 0.19,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "398": {
+    "minutes": 2086,
+    "shots": 55,
+    "shotsOnTarget": 19,
+    "shotsOnTargetPct": 34.5,
+    "goalsPerShot": 0.13,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "399": {
+    "minutes": 1786,
+    "shots": 55,
+    "shotsOnTarget": 13,
+    "shotsOnTargetPct": 23.6,
+    "goalsPerShot": 0.07,
+    "tacklesWon": 16,
+    "interceptions": 7
+  },
+  "400": {
+    "minutes": 1784,
+    "shots": 39,
+    "shotsOnTarget": 15,
+    "shotsOnTargetPct": 38.5,
+    "goalsPerShot": 0.13,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "401": {
+    "minutes": 700,
+    "shots": 30,
+    "shotsOnTarget": 9,
+    "shotsOnTargetPct": 30,
+    "goalsPerShot": 0.1,
+    "tacklesWon": 8,
+    "interceptions": 2
+  },
+  "404": {
+    "minutes": 1631,
+    "shots": 49,
+    "shotsOnTarget": 16,
+    "shotsOnTargetPct": 32.7,
+    "goalsPerShot": 0.1,
+    "tacklesWon": 4,
+    "interceptions": 11
+  },
+  "411": {
+    "minutes": 2953,
+    "shots": 126,
+    "shotsOnTarget": 59,
+    "shotsOnTargetPct": 46.8,
+    "goalsPerShot": 0.19,
+    "tacklesWon": 7,
+    "interceptions": 4
+  },
+  "415": {
+    "minutes": 1449,
+    "shots": 25,
+    "shotsOnTarget": 11,
+    "shotsOnTargetPct": 44,
+    "goalsPerShot": 0.16,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "416": {
+    "minutes": 1170,
+    "shots": 11,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 27.3,
+    "goalsPerShot": 0.09,
+    "tacklesWon": 13,
+    "interceptions": 11
+  },
+  "418": {
+    "minutes": 1653,
+    "shots": 14,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 28.6,
+    "goalsPerShot": 0.07,
+    "tacklesWon": 17,
+    "interceptions": 12
+  },
+  "420": {
+    "minutes": 1740,
+    "shots": 9,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 33.3,
+    "goalsPerShot": 0,
+    "tacklesWon": 20,
+    "interceptions": 31
+  },
+  "423": {
+    "minutes": 3219,
+    "shots": 10,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 30,
+    "goalsPerShot": 0.1,
+    "tacklesWon": 45,
+    "interceptions": 43
+  },
+  "427": {
+    "minutes": 2609,
+    "shots": 73,
+    "shotsOnTarget": 32,
+    "shotsOnTargetPct": 43.8,
+    "goalsPerShot": 0.15,
+    "tacklesWon": 11,
+    "interceptions": 7
+  },
+  "430": {
+    "minutes": 1017,
+    "shots": 19,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 26.3,
+    "goalsPerShot": 0.16,
+    "tacklesWon": 13,
+    "interceptions": 9
+  },
+  "431": {
+    "minutes": 2341,
+    "shots": 53,
+    "shotsOnTarget": 23,
+    "shotsOnTargetPct": 43.4,
+    "goalsPerShot": 0.04,
+    "tacklesWon": 23,
+    "interceptions": 15
+  },
+  "432": {
+    "minutes": 1662,
+    "shots": 13,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 23.1,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 20,
+    "interceptions": 19
+  },
+  "439": {
+    "minutes": 1643,
+    "shots": 61,
+    "shotsOnTarget": 34,
+    "shotsOnTargetPct": 55.7,
+    "goalsPerShot": 0.18,
+    "tacklesWon": 3,
+    "interceptions": 3
+  },
+  "440": {
+    "minutes": 626,
+    "shots": 25,
+    "shotsOnTarget": 9,
+    "shotsOnTargetPct": 36,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 6,
+    "interceptions": 1
+  },
+  "445": {
+    "minutes": 2965,
+    "shots": 28,
+    "shotsOnTarget": 14,
+    "shotsOnTargetPct": 50,
+    "goalsPerShot": 0.14,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "446": {
+    "minutes": 1091,
+    "shots": 17,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 23.5,
+    "goalsPerShot": 0,
+    "tacklesWon": 9,
+    "interceptions": 16
+  },
+  "447": {
+    "minutes": 1835,
+    "shots": 15,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 26.7,
+    "goalsPerShot": 0.07,
+    "tacklesWon": 14,
+    "interceptions": 25
+  },
+  "448": {
+    "minutes": 2199,
+    "shots": 10,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 30,
+    "goalsPerShot": 0.1,
+    "tacklesWon": 26,
+    "interceptions": 20
+  },
+  "449": {
+    "minutes": 2181,
+    "shots": 25,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 24,
+    "goalsPerShot": 0.04,
+    "tacklesWon": 31,
+    "interceptions": 29
+  },
+  "453": {
+    "minutes": 1966,
+    "shots": 58,
+    "shotsOnTarget": 21,
+    "shotsOnTargetPct": 36.2,
+    "goalsPerShot": 0.12,
+    "tacklesWon": 5,
+    "interceptions": 3
+  },
+  "454": {
+    "minutes": 1319,
+    "shots": 17,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 23.5,
+    "goalsPerShot": 0,
+    "tacklesWon": 11,
+    "interceptions": 3
+  },
+  "455": {
+    "minutes": 2534,
+    "shots": 37,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 21.6,
+    "goalsPerShot": 0,
+    "tacklesWon": 25,
+    "interceptions": 28
+  },
+  "456": {
+    "minutes": 1450,
+    "shots": 16,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 25,
+    "goalsPerShot": 0.13,
+    "tacklesWon": 21,
+    "interceptions": 9
+  },
+  "457": {
+    "minutes": 1617,
+    "shots": 42,
+    "shotsOnTarget": 13,
+    "shotsOnTargetPct": 31,
+    "goalsPerShot": 0.07,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "458": {
+    "minutes": 1951,
+    "shots": 32,
+    "shotsOnTarget": 11,
+    "shotsOnTargetPct": 34.4,
+    "goalsPerShot": 0.06,
+    "tacklesWon": 23,
+    "interceptions": 28
+  },
+  "459": {
+    "minutes": 1496,
+    "shots": 12,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 33.3,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 18,
+    "interceptions": 20
+  },
+  "460": {
+    "minutes": 983,
+    "shots": 17,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 35.3,
+    "goalsPerShot": 0,
+    "tacklesWon": 15,
+    "interceptions": 7
+  },
+  "463": {
+    "minutes": 1902,
+    "shots": 32,
+    "shotsOnTarget": 13,
+    "shotsOnTargetPct": 40.6,
+    "goalsPerShot": 0.22,
+    "tacklesWon": 13,
+    "interceptions": 5
+  },
+  "464": {
+    "minutes": 531,
+    "shots": 13,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 38.5,
+    "goalsPerShot": 0.08,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "465": {
+    "minutes": 819,
+    "shots": 23,
+    "shotsOnTarget": 12,
+    "shotsOnTargetPct": 52.2,
+    "goalsPerShot": 0.3,
+    "tacklesWon": 5,
+    "interceptions": 1
+  },
+  "469": {
+    "minutes": 3204,
+    "shots": 46,
+    "shotsOnTarget": 19,
+    "shotsOnTargetPct": 41.3,
+    "goalsPerShot": 0.04,
+    "tacklesWon": 61,
+    "interceptions": 46
+  },
+  "470": {
+    "minutes": 1345,
+    "shots": 5,
+    "shotsOnTarget": 2,
+    "shotsOnTargetPct": 40,
+    "goalsPerShot": 0.2,
+    "tacklesWon": 18,
+    "interceptions": 11
+  },
+  "472": {
+    "minutes": 2130,
+    "shots": 11,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 36.4,
+    "goalsPerShot": 0.09,
+    "tacklesWon": 23,
+    "interceptions": 29
+  },
+  "475": {
+    "minutes": 1028,
+    "shots": 5,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 60,
+    "goalsPerShot": 0.4,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "480": {
+    "minutes": 3097,
+    "shots": 83,
+    "shotsOnTarget": 32,
+    "shotsOnTargetPct": 38.6,
+    "goalsPerShot": 0.17,
+    "tacklesWon": 16,
+    "interceptions": 12
+  },
+  "481": {
+    "minutes": 3331,
+    "shots": 44,
+    "shotsOnTarget": 10,
+    "shotsOnTargetPct": 22.7,
+    "goalsPerShot": 0.07,
+    "tacklesWon": 60,
+    "interceptions": 41
+  },
+  "482": {
+    "minutes": 1841,
+    "shots": 30,
+    "shotsOnTarget": 10,
+    "shotsOnTargetPct": 33.3,
+    "goalsPerShot": 0.1,
+    "tacklesWon": 7,
+    "interceptions": 8
+  },
+  "483": {
+    "minutes": 1173,
+    "shots": 15,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 26.7,
+    "goalsPerShot": 0.07,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "484": {
+    "minutes": 1688,
+    "shots": 25,
+    "shotsOnTarget": 11,
+    "shotsOnTargetPct": 44,
+    "goalsPerShot": 0.04,
+    "tacklesWon": 11,
+    "interceptions": 11
+  },
+  "485": {
+    "minutes": 553,
+    "shots": 9,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 33.3,
+    "goalsPerShot": 0,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "487": {
+    "minutes": 1175,
+    "shots": 18,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 27.8,
+    "goalsPerShot": 0.06,
+    "tacklesWon": 30,
+    "interceptions": 6
+  },
+  "488": {
+    "minutes": 2075,
+    "shots": 16,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 31.3,
+    "goalsPerShot": 0.13,
+    "tacklesWon": 32,
+    "interceptions": 22
+  },
+  "490": {
+    "minutes": 901,
+    "shots": 23,
+    "shotsOnTarget": 9,
+    "shotsOnTargetPct": 39.1,
+    "goalsPerShot": 0.13,
+    "tacklesWon": 1,
+    "interceptions": 1
+  },
+  "491": {
+    "minutes": 2298,
+    "shots": 70,
+    "shotsOnTarget": 21,
+    "shotsOnTargetPct": 30,
+    "goalsPerShot": 0.07,
+    "tacklesWon": 16,
+    "interceptions": 2
+  },
+  "492": {
+    "minutes": 494,
+    "shots": 15,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 53.3,
+    "goalsPerShot": 0.27,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "499": {
+    "minutes": 2796,
+    "shots": 32,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 25,
+    "goalsPerShot": 0.03,
+    "tacklesWon": 50,
+    "interceptions": 31
+  },
+  "500": {
+    "minutes": 1868,
+    "shots": 17,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 35.3,
+    "goalsPerShot": 0.24,
+    "tacklesWon": 30,
+    "interceptions": 31
+  },
+  "503": {
+    "minutes": 3041,
+    "shots": 16,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 37.5,
+    "goalsPerShot": 0.25,
+    "tacklesWon": 20,
+    "interceptions": 21
+  },
+  "505": {
+    "minutes": 2056,
+    "shots": 13,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 61.5,
+    "goalsPerShot": 0,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "512": {
+    "minutes": 1535,
+    "shots": 26,
+    "shotsOnTarget": 9,
+    "shotsOnTargetPct": 34.6,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 17,
+    "interceptions": 3
+  },
+  "513": {
+    "minutes": 1755,
+    "shots": 42,
+    "shotsOnTarget": 10,
+    "shotsOnTargetPct": 23.8,
+    "goalsPerShot": 0.05,
+    "tacklesWon": 20,
+    "interceptions": 15
+  },
+  "514": {
+    "minutes": 1349,
+    "shots": 35,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 22.9,
+    "goalsPerShot": 0.11,
+    "tacklesWon": 12,
+    "interceptions": 5
+  },
+  "516": {
+    "minutes": 1883,
+    "shots": 13,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 23.1,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 36,
+    "interceptions": 36
+  },
+  "517": {
+    "minutes": 985,
+    "shots": 21,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 38.1,
+    "goalsPerShot": 0,
+    "tacklesWon": 8,
+    "interceptions": 0
+  },
+  "518": {
+    "minutes": 1398,
+    "shots": 17,
+    "shotsOnTarget": 6,
+    "shotsOnTargetPct": 35.3,
+    "goalsPerShot": 0.12,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "519": {
+    "minutes": 1184,
+    "shots": 11,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 36.4,
+    "goalsPerShot": 0.09,
+    "tacklesWon": 14,
+    "interceptions": 18
+  },
+  "520": {
+    "minutes": 965,
+    "shots": 12,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 41.7,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 14,
+    "interceptions": 3
+  },
+  "522": {
+    "minutes": 1478,
+    "shots": 11,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 45.5,
+    "goalsPerShot": 0.18,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "525": {
+    "minutes": 3016,
+    "shots": 28,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 28.6,
+    "goalsPerShot": 0.11,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "527": {
+    "minutes": 1964,
+    "shots": 61,
+    "shotsOnTarget": 26,
+    "shotsOnTargetPct": 42.6,
+    "goalsPerShot": 0.18,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "532": {
+    "minutes": 2149,
+    "shots": 26,
+    "shotsOnTarget": 9,
+    "shotsOnTargetPct": 34.6,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 17,
+    "interceptions": 20
+  },
+  "533": {
+    "minutes": 2784,
+    "shots": 26,
+    "shotsOnTarget": 4,
+    "shotsOnTargetPct": 15.4,
+    "goalsPerShot": 0.12,
+    "tacklesWon": 45,
+    "interceptions": 37
+  },
+  "534": {
+    "minutes": 3036,
+    "shots": 34,
+    "shotsOnTarget": 7,
+    "shotsOnTargetPct": 20.6,
+    "goalsPerShot": 0.06,
+    "tacklesWon": 46,
+    "interceptions": 25
+  },
+  "535": {
+    "minutes": 2798,
+    "shots": 24,
+    "shotsOnTarget": 9,
+    "shotsOnTargetPct": 37.5,
+    "goalsPerShot": 0.04,
+    "tacklesWon": 18,
+    "interceptions": 36
+  },
+  "542": {
+    "minutes": 2930,
+    "shots": 36,
+    "shotsOnTarget": 12,
+    "shotsOnTargetPct": 33.3,
+    "goalsPerShot": 0.06,
+    "tacklesWon": 56,
+    "interceptions": 28
+  },
+  "543": {
+    "minutes": 1405,
+    "shots": 26,
+    "shotsOnTarget": 8,
+    "shotsOnTargetPct": 30.8,
+    "goalsPerShot": 0.04,
+    "tacklesWon": 7,
+    "interceptions": 4
+  },
+  "544": {
+    "minutes": 2904,
+    "shots": 21,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 23.8,
+    "goalsPerShot": 0.05,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "545": {
+    "minutes": 2889,
+    "shots": 19,
+    "shotsOnTarget": 5,
+    "shotsOnTargetPct": 26.3,
+    "goalsPerShot": 0,
+    "tacklesWon": 26,
+    "interceptions": 33
+  },
+  "548": {
+    "minutes": 761,
+    "shots": 12,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 25,
+    "goalsPerShot": 0.08,
+    "tacklesWon": 8,
+    "interceptions": 4
+  },
+  "549": {
+    "minutes": 1561,
+    "shots": 25,
+    "shotsOnTarget": 10,
+    "shotsOnTargetPct": 40,
+    "goalsPerShot": 0.16,
+    "tacklesWon": 6,
+    "interceptions": 3
+  },
+  "551": {
+    "minutes": 404,
+    "shots": 7,
+    "shotsOnTarget": 3,
+    "shotsOnTargetPct": 42.9,
+    "goalsPerShot": 0,
+    "tacklesWon": null,
+    "interceptions": null
+  },
+  "552": {
+    "minutes": 1927,
+    "shots": 36,
+    "shotsOnTarget": 18,
+    "shotsOnTargetPct": 50,
+    "goalsPerShot": 0.19,
+    "tacklesWon": 2,
+    "interceptions": 0
+  },
+  "553": {
+    "minutes": 1165,
+    "shots": 43,
+    "shotsOnTarget": 17,
+    "shotsOnTargetPct": 39.5,
+    "goalsPerShot": 0.14,
+    "tacklesWon": null,
+    "interceptions": null
+  }
+}
