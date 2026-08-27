@@ -27,12 +27,47 @@ const SAVES_PER_POINT = 3;
 const CONCEDED_PER_PENALTY = 2;
 
 /**
- * Below three full matches there is no rate worth reading, and both the rate
- * and the minutes fallbacks switch on together at this line. They have to
- * agree: a player given estimated rates but measured minutes, or the reverse,
- * gets a projection assembled from two different players.
+ * Below three full matches, a measured rate is a small enough sample that it
+ * needs propping up by the price-implied prior rather than trusted outright.
+ * This used to be a hard switch — below it, ignore the measured data
+ * entirely and use price instead — which was fine in preseason, where
+ * `minutes` meant an entire completed season and "below 270" genuinely meant
+ * "no usable record". The moment a live season's first ball is kicked,
+ * `minutes` resets to mean *this season so far*, and every player in the
+ * league — including established starters with a full history — reads as
+ * "below 270" until gameweek three finishes. A hard switch then discards
+ * real signal (a nailed-on starter's actual GW1 line) for a guess for the
+ * entire league, every August.
+ *
+ * So this is a blend weight, not a gate: `trust = clamp(minutes / this, 0,
+ * 1)`. A player with zero minutes still gets the pure price/FBref fallback
+ * below — he has no record to blend in. A player with 90 gets roughly a
+ * third measured, two-thirds price; by three full matches he's fully on his
+ * own numbers. Both the rate and the minutes model use the same weight, so a
+ * player is never given a measured rate but a guessed minutes share, or the
+ * other way round.
  */
 const MIN_MINUTES_FOR_RATES = 270;
+
+/**
+ * The minutes floor `priceBaselines`, `minutesBaselines` and
+ * `expectedGoalsCalibration` require before trusting a player's rate enough
+ * to feed the league-wide fit. Fixed at 450 in preseason, where `minutes` is
+ * last season's total and 450 reliably separates squad players from bit-part
+ * ones. Early in a live season almost nobody clears a preseason-sized bar —
+ * demanding it would empty the fit out to its flat fallback for the first
+ * five gameweeks of every season, which is exactly the failure this whole
+ * function exists to avoid. Scaled down to what's actually obtainable so
+ * far, floored at one full match so a single substitute appearance still
+ * can't qualify.
+ *
+ * @param currentGw  gameweeks completed this season so far — 0 in preseason,
+ *                    where `minutes` means the whole of last season instead.
+ */
+function sampleFloor(currentGw) {
+  const played = currentGw || 0;
+  return played === 0 ? 450 : clamp(played * 90, 90, 450);
+}
 
 /**
  * League-strength discount applied to a no-record player's goals/assists rate
@@ -167,21 +202,24 @@ export function buildContext(bootstrap, fixtures, fbref = new Map()) {
   const events = bootstrap.events;
   const current = events.find((e) => e.is_current);
   const next = events.find((e) => e.is_next);
+  const currentGw = current ? current.id : null;
+  const floor = sampleFloor(currentGw);
 
   return {
     teams,
     scoring,
     fixturesByTeam,
     events,
-    currentGw: current ? current.id : null,
+    currentGw,
     nextGw: next ? next.id : (current ? current.id + 1 : 1),
     // Before a ball is kicked, every per-player stat in the payload belongs to
     // last season. The projections still work — they just describe a player's
     // established rate rather than current form — but the UI needs to say so.
     preSeason: !current,
-    baseline: priceBaselines(bootstrap.elements),
-    minsBaseline: minutesBaselines(bootstrap.elements),
-    xCal: expectedGoalsCalibration(bootstrap.elements),
+    sampleFloor: floor,
+    baseline: priceBaselines(bootstrap.elements, floor),
+    minsBaseline: minutesBaselines(bootstrap.elements, floor),
+    xCal: expectedGoalsCalibration(bootstrap.elements, floor),
     // Last season's goals/assists/minutes for no-record players, from FBref —
     // real numbers for the ~third of no-record players a manual Stathead
     // capture could match, in place of the price-only guess. Keyed by FPL
@@ -206,13 +244,13 @@ export function buildContext(bootstrap, fixtures, fbref = new Map()) {
  * midfielders a squad is built around. Both ratios are measured here rather
  * than hardcoded so a change in either definition follows automatically.
  */
-function expectedGoalsCalibration(elements) {
+function expectedGoalsCalibration(elements, floor = 450) {
   let goals = 0;
   let xg = 0;
   let assists = 0;
   let xa = 0;
   for (const p of elements) {
-    if (p.minutes < 450) continue;
+    if (p.minutes < floor) continue;
     goals += p.goals_scored;
     xg += n(p.expected_goals);
     assists += p.assists;
@@ -243,12 +281,12 @@ function expectedGoalsCalibration(elements) {
  * `projectPlayer` falls back to it — flagged `provisional` so the UI can mark
  * the estimate rather than pass it off as measured.
  */
-function priceBaselines(elements) {
+function priceBaselines(elements, floor = 450) {
   const byPos = new Map();
   for (const code of Object.values(POS)) byPos.set(code, []);
 
   for (const p of elements) {
-    if (p.minutes < 450) continue; // too little to read a rate from
+    if (p.minutes < floor) continue; // too little to read a rate from
     const per90 = (p.total_points / p.minutes) * 90;
     byPos.get(POS[p.element_type])?.push({ cost: p.now_cost, per90 });
   }
@@ -290,12 +328,12 @@ function priceBaselines(elements) {
  * compilers expect of a player, and expectation of minutes is most of what
  * they are pricing.
  */
-function minutesBaselines(elements) {
+function minutesBaselines(elements, floor = 450) {
   const byPos = new Map();
   for (const code of Object.values(POS)) byPos.set(code, []);
 
   for (const p of elements) {
-    if (p.minutes < 450) continue;
+    if (p.minutes < floor) continue;
     byPos.get(POS[p.element_type])?.push({
       cost: p.now_cost,
       share: clamp(p.minutes / (SEASON_GAMES * 90), 0, 1),
@@ -363,11 +401,11 @@ export function minutesModel(player, avail = availability(player), ctx = null) {
   const starts = player.starts || 0;
   const minutes = player.minutes || 0;
 
-  // No record to read: fall back to what the price implies, on the same
-  // threshold the rate fallback uses so a player is never given measured
-  // minutes and estimated rates or the other way round.
-  if (minutes < MIN_MINUTES_FOR_RATES && ctx?.minsBaseline) {
-    const fit = ctx.minsBaseline.get(POS[player.element_type]) || { slope: 0, intercept: 0.5 };
+  // Price/FBref-implied playing-time share — the whole answer for a player
+  // with no minutes at all, and the "prior" half of the blend below for one
+  // who has some but not yet enough to trust outright.
+  const priorShare = () => {
+    const fit = ctx?.minsBaseline?.get(POS[player.element_type]) || { slope: 0, intercept: 0.5 };
     // Floored well above zero and capped below one: the cheapest player in the
     // game is still a squad member who might start, and no one is guaranteed.
     let share = clamp(fit.intercept + fit.slope * player.now_cost, 0.12, 0.88);
@@ -381,7 +419,12 @@ export function minutesModel(player, avail = availability(player), ctx = null) {
       const fbShare = clamp(fb.minutes / (SEASON_GAMES * 90), 0.12, 0.88);
       share = clamp(0.7 * fbShare + 0.3 * share, 0.12, 0.88);
     }
+    return share;
+  };
 
+  // Genuinely no record: the price/FBref prior is the entire answer.
+  if (minutes === 0) {
+    const share = priorShare();
     const rawP60 = clamp(share * 0.98, 0, 0.95);
     return {
       p60: rawP60 * avail,
@@ -391,14 +434,35 @@ export function minutesModel(player, avail = availability(player), ctx = null) {
     };
   }
 
-  const startShare = clamp(starts / SEASON_GAMES, 0, 1);
+  // Games actually played so far this season — the denominator that matches
+  // what `minutes`/`starts` count once a season is live. `currentGw` is null
+  // in preseason, where `minutes` means the whole of last season and 38 is
+  // the right divisor instead.
+  const gamesSoFar = ctx?.currentGw ? clamp(ctx.currentGw, 1, SEASON_GAMES) : SEASON_GAMES;
+
+  const startShare = clamp(starts / gamesSoFar, 0, 1);
   const minsPerStart = starts > 0 ? Math.min(90, minutes / starts) : 0;
   // A player averaging 90 minutes per start is never withdrawn; one averaging
   // 55 is a regular substitution.
   const startQuality = starts > 0 ? clamp((minsPerStart - 40) / 45, 0.2, 1) : 0;
-  const minuteShare = clamp(minutes / (SEASON_GAMES * 90), 0, 1);
+  const minuteShare = clamp(minutes / (gamesSoFar * 90), 0, 1);
 
-  const rawP60 = clamp(0.5 * startShare * startQuality + 0.5 * minuteShare * 1.1, 0, 0.97);
+  const rawP60Measured = clamp(0.5 * startShare * startQuality + 0.5 * minuteShare * 1.1, 0, 0.97);
+  const expMinutesMeasured = clamp(minuteShare * 90, 0, 90);
+
+  // Below the same three-match trust threshold the rate model uses, blend
+  // with the price-implied share rather than trusting a one- or two-game
+  // sample outright — a player is never given a measured rate but a guessed
+  // minutes share, or the other way round.
+  const trust = clamp(minutes / MIN_MINUTES_FOR_RATES, 0, 1);
+  let rawP60 = rawP60Measured;
+  let expMinutes = expMinutesMeasured;
+  if (trust < 1) {
+    const share = priorShare();
+    rawP60 = trust * rawP60Measured + (1 - trust) * clamp(share * 0.98, 0, 0.95);
+    expMinutes = trust * expMinutesMeasured + (1 - trust) * (share * 90);
+  }
+
   const p60 = rawP60 * avail;
   const pAppear = clamp(rawP60 / 0.88, 0, 0.99) * avail;
 
@@ -406,7 +470,8 @@ export function minutesModel(player, avail = availability(player), ctx = null) {
     p60,
     pAppear,
     // Expected minutes on the pitch, used to scale the per-90 rates below.
-    expMinutes: clamp(minuteShare * 90, 0, 90) * avail,
+    expMinutes: expMinutes * avail,
+    provisional: trust < 1,
   };
 }
 
@@ -423,13 +488,16 @@ function ratesFor(player, ctx) {
   const code = POS[player.element_type];
   const mins = player.minutes || 0;
 
-  if (mins < MIN_MINUTES_FOR_RATES) {
+  // The price/FBref-implied rates: the whole answer for a player with zero
+  // minutes, and the "prior" half of the blend below for one who has some
+  // minutes but not yet enough to trust outright.
+  const priceRates = () => {
     // Distribute the price-implied points-per-90 across the components in the
     // proportions that position typically earns them, so the breakdown still
     // adds up.
     const fit = ctx.baseline.get(code) || { slope: 0, intercept: 2.5 };
     const per90 = clamp(fit.intercept + fit.slope * player.now_cost, 1.5, 9);
-    const rates = { ...syntheticRates(code, per90), provisional: true, source: 'price' };
+    const rates = { ...syntheticRates(code, per90), source: 'price' };
 
     // A matched FBref record replaces the price-guessed goals/assists rate
     // with the player's actual rate last season, discounted for league
@@ -444,13 +512,17 @@ function ratesFor(player, ctx) {
       rates.source = fb.source;
     }
     return rates;
+  };
+
+  // Genuinely no record — the only case where the price/FBref prior is the
+  // entire answer, not blended with anything.
+  if (mins === 0) {
+    return { ...priceRates(), provisional: true };
   }
 
   const per90 = (v) => (n(v) / mins) * 90;
   const cal = ctx.xCal || { goals: 1, assists: 1 };
-
-  return {
-    provisional: false,
+  const measured = {
     goals:
       XG_WEIGHT * n(player.expected_goals_per_90) * cal.goals +
       (1 - XG_WEIGHT) * per90(player.goals_scored),
@@ -467,6 +539,18 @@ function ratesFor(player, ctx) {
     penMissed: per90(player.penalties_missed),
     ownGoals: per90(player.own_goals),
   };
+
+  const trust = clamp(mins / MIN_MINUTES_FOR_RATES, 0, 1);
+  if (trust >= 1) {
+    return { ...measured, provisional: false, source: 'measured' };
+  }
+
+  const prior = priceRates();
+  const blended = {};
+  for (const key of Object.keys(measured)) {
+    blended[key] = trust * measured[key] + (1 - trust) * prior[key];
+  }
+  return { ...blended, provisional: true, source: 'blend' };
 }
 
 /**

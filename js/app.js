@@ -66,14 +66,19 @@ function fdrTicker(pr, { max = 5, labeled = false } = {}) {
 }
 
 /**
- * `measured` (real PL data) renders no tag. `fbref-Championship` and
- * `fbref-Big5` are real goals/assists from last season elsewhere, discounted
- * for league strength — worth distinguishing from a bare price guess.
+ * `measured` (a fully trusted PL sample) renders no tag. `fbref-Championship`
+ * and `fbref-Big5` are real goals/assists from last season elsewhere,
+ * discounted for league strength. `blend` is a player with a genuine but
+ * still-thin PL sample this season — worth flagging as early, not conflating
+ * with `price`, which has no record to read at all.
  */
 function provenanceTag(pr) {
   if (!pr?.provisional) return null;
   if (pr.source === 'fbref-Championship' || pr.source === 'fbref-Big5') {
     return el('span', { class: 'tag prov fbref' }, 'fbref');
+  }
+  if (pr.source === 'blend') {
+    return el('span', { class: 'tag prov' }, 'early');
   }
   return el('span', { class: 'tag prov' }, 'est');
 }
@@ -538,6 +543,10 @@ function showPlayer(p) {
               `player or a new signing. His goals and assists come from his actual ${pr.source === 'fbref-Championship' ? 'Championship' : 'other-league'} ` +
               'form last season (FBref), discounted for league strength; everything else about ' +
               'his projection still comes from his price.'
+            : pr.source === 'blend'
+            ? 'This player has a real Premier League record this season, but it\'s still a thin ' +
+              'sample — his projection blends his actual rate so far with a price-based prior, ' +
+              'shifting fully onto his own numbers by his third match.'
             : 'This player has no Premier League record to read a rate from — a promoted-club ' +
               'player or a new signing. His projection is estimated from his price, which is what ' +
               'FPL\'s own compilers expect of him. Treat it as a prior, not a measurement.')
