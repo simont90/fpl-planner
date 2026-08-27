@@ -70,6 +70,17 @@ function sampleFloor(currentGw) {
 }
 
 /**
+ * Games actually played so far this season — the denominator that matches
+ * what `minutes`/`starts` count once a season is live, instead of the fixed
+ * 38-game season those fields count against in preseason. Used everywhere a
+ * playing-time *share* is computed from raw minutes, so a nailed-on starter
+ * with one start out of one possible game reads as ~100% rather than 1/38.
+ */
+function gamesPlayed(currentGw) {
+  return currentGw ? clamp(currentGw, 1, SEASON_GAMES) : SEASON_GAMES;
+}
+
+/**
  * League-strength discount applied to a no-record player's goals/assists rate
  * when it comes from FBref rather than price. Heuristic, not fitted — there
  * is no PL record yet to fit it against. The Championship gap is wider than
@@ -218,7 +229,7 @@ export function buildContext(bootstrap, fixtures, fbref = new Map()) {
     preSeason: !current,
     sampleFloor: floor,
     baseline: priceBaselines(bootstrap.elements, floor),
-    minsBaseline: minutesBaselines(bootstrap.elements, floor),
+    minsBaseline: minutesBaselines(bootstrap.elements, floor, gamesPlayed(currentGw)),
     xCal: expectedGoalsCalibration(bootstrap.elements, floor),
     // Last season's goals/assists/minutes for no-record players, from FBref —
     // real numbers for the ~third of no-record players a manual Stathead
@@ -328,7 +339,7 @@ function priceBaselines(elements, floor = 450) {
  * compilers expect of a player, and expectation of minutes is most of what
  * they are pricing.
  */
-function minutesBaselines(elements, floor = 450) {
+function minutesBaselines(elements, floor = 450, games = SEASON_GAMES) {
   const byPos = new Map();
   for (const code of Object.values(POS)) byPos.set(code, []);
 
@@ -336,7 +347,7 @@ function minutesBaselines(elements, floor = 450) {
     if (p.minutes < floor) continue;
     byPos.get(POS[p.element_type])?.push({
       cost: p.now_cost,
-      share: clamp(p.minutes / (SEASON_GAMES * 90), 0, 1),
+      share: clamp(p.minutes / (games * 90), 0, 1),
     });
   }
 
@@ -434,11 +445,7 @@ export function minutesModel(player, avail = availability(player), ctx = null) {
     };
   }
 
-  // Games actually played so far this season — the denominator that matches
-  // what `minutes`/`starts` count once a season is live. `currentGw` is null
-  // in preseason, where `minutes` means the whole of last season and 38 is
-  // the right divisor instead.
-  const gamesSoFar = ctx?.currentGw ? clamp(ctx.currentGw, 1, SEASON_GAMES) : SEASON_GAMES;
+  const gamesSoFar = gamesPlayed(ctx?.currentGw);
 
   const startShare = clamp(starts / gamesSoFar, 0, 1);
   const minsPerStart = starts > 0 ? Math.min(90, minutes / starts) : 0;
