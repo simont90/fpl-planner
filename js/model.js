@@ -229,7 +229,7 @@ export function buildContext(bootstrap, fixtures, fbref = new Map()) {
     preSeason: !current,
     sampleFloor: floor,
     baseline: priceBaselines(bootstrap.elements, floor),
-    minsBaseline: minutesBaselines(bootstrap.elements, floor, gamesPlayed(currentGw)),
+    minsBaseline: minutesBaselines(bootstrap.elements, gamesPlayed(currentGw)),
     xCal: expectedGoalsCalibration(bootstrap.elements, floor),
     // Last season's goals/assists/minutes for no-record players, from FBref —
     // real numbers for the ~third of no-record players a manual Stathead
@@ -338,13 +338,23 @@ function priceBaselines(elements, floor = 450) {
  * Fitted the same way and for the same reason: price is what FPL's own
  * compilers expect of a player, and expectation of minutes is most of what
  * they are pricing.
+ *
+ * Unlike the per-90 rate baselines above, this one is fit on every player,
+ * no minutes floor. A share (0 to 1) doesn't suffer the small-sample-noise
+ * problem a per-90 rate does — a player who hasn't played at all is a
+ * genuine, informative zero, not a noisy measurement to exclude. Applying
+ * the same floor here as the rate baselines actively breaks the fit early
+ * in a live season: with one gameweek played, "cleared the floor" means
+ * "played the entire game", so every row in the fit would read the same
+ * ~100% share regardless of price, flattening the whole regression to a
+ * constant right when it's needed most — to tell a nailed-on starter's
+ * price-implied share apart from a fringe player's.
  */
-function minutesBaselines(elements, floor = 450, games = SEASON_GAMES) {
+function minutesBaselines(elements, games = SEASON_GAMES) {
   const byPos = new Map();
   for (const code of Object.values(POS)) byPos.set(code, []);
 
   for (const p of elements) {
-    if (p.minutes < floor) continue;
     byPos.get(POS[p.element_type])?.push({
       cost: p.now_cost,
       share: clamp(p.minutes / (games * 90), 0, 1),
